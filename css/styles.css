@@ -1,0 +1,28 @@
+.fab, .fa {
+    color: black;
+}
+
+#home {
+    text-align: center;
+}
+
+.form-row {
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+#links {
+    background-color: rgb(165, 87, 42);
+    color: black;
+}
+
+.container {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    text-align: center;
+}

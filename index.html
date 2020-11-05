@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim|Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim|Quicksand|Covered By Your Grace">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/styles.css">
@@ -20,18 +20,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#webdev">Web Dev</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#author">Author</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#speaker">Speaker</a>
-            </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#webdev">Web Dev</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#author">Author</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#speaker">Speaker</a>
+                </li>
             </ul>
             <!-- Purchase Modal Trigger -->
             <button class="btn btn-outline-light" type="button" data-toggle="modal" data-target="#contactModal" style="font-size: 20px;">Contact</button>
@@ -121,7 +121,7 @@
               <img src="img/Letter_A.png" class="card-img-top" alt="Picture of character Apollos">
               <div class="card-body">
                 <a href="https://rachelcbrown13.github.io/thisismefromatozReact" target="_blank"><h5 class="card-title">This is ME from A to Z - React</h5></a>
-                <p class="card-text">Same website built using React</p>
+                <p class="card-text">This is ME from A to Z Website built using React</p>
               </div>
             </div>
             <div class="card" 
@@ -152,33 +152,30 @@
     </div>
 
 <!-- Author -->
-    <div class="container" id="author">
-        <div class="col">
-            <img src="img/FrontCover.png" width="75%" class="img-thumbnail" />
+    <section class="grid-container" id="author">
+        <img src="img/available on_.png" width="75%" class="img-thumbnail grid-item grid-item-author-1" />
+        <div class="grid-item-author-2">
+            <h1  style="font:75px Covered By Your Grace">This is ME from A to Z</h1>
+            <a class="btn btn-lg btn-block" target="_blank" href="https://www.amazon.com/This-ME-Rachel-Chardea-Brown/dp/B089M432P5/ref=sr_1_2?crid=1QZ3VLFJCZU8W&dchild=1&keywords=this+is+me+from+a+to+z+by+rachel+brown&qid=1604546294&sprefix=this+is+me+from+a+to+z%2Caps%2C193&sr=8-2" role="button">Purchase</a>
         </div>
-        <p class="text-break">
+        <p class="text-break grid-item-author-3">
             Rachel Chardéa Brown is a teacher, speaker, and author. Through her experiences as a mother and preschool teacher, Rachel has developed a passion for children’s literature and seeing little ones grow. In between changing diapers and weathering meltdowns, she seeks to build children’s confidence, develop their imaginations and create environments for growth. Rachel resides in Fort Worth, Texas with her husband EJ and son Apollos.
         </p>
-    </div>
+       
+    </section>
 
 <!-- Speaker -->
-    <div class="container" id="speaker" >
-        <div id="carouselExampleControls" class="carousel slide container" data-ride="carousel" >
-            <div class="carousel-inner">
+    <section class="grid-container" id="speaker">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+            <div class="carousel-inner grid-item-speaker-1">
                 <div class="carousel-item active">
-                    <img src="img/IMG_5587 (2).JPG" class="d-block w-100"  width="30%" alt="Rachel speaking">
+                    <img src="img/IMG_5552.JPG" class="d-block w-100" alt="Rachel speaking">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/BA46EB3B-.jpg" class="d-block w-100" width="30%" alt="Rachel speaking">
+                    <img src="img/IMG_5598.JPG" class="d-block w-100" alt="Rachel speaking">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/IMG_5552.JPG" class="d-block w-100" width="30%" alt="Rachel speaking">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/IMG_5598.JPG" class="d-block w-100" width="30%" alt="Rachel speaking">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/IMG_5644.JPG" class="d-block w-100" width="30%" alt="Rachel speaking">
+                    <img src="img/IMG_5644.JPG" class="d-block w-100" alt="Rachel speaking">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -190,7 +187,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <p>
+        <p class="grid-item-speaker-2">
             In 2011 I found myself in a life-consuming relationship.  The guy was emotionally, spiritually and verbally abusive.  I soon started to conform myself to make sure he was happy due to the concerns he would often express.  Truthfully, I lost my identity in it all.  I hit a breaking point, and the Lord was there to meet me.  I remember thinking to myself, “the things this guy was saying about me is true, I even believe them about myself.” Then I heard the Lord say “Are you not man? Does man trump what I say about you?” And my life was changed in that moment! 
             The real problem wasn’t that I was consumed in this relationship or that every decision I made was wrapped up in every word this guy was saying; it was the fact that I believed all the lies about myself.  I wasn’t believing the truth about myself.
             Psalm 139:17-18 says: 
@@ -202,7 +199,7 @@
                 you are still with me!
             Instead of believing the fabrications or dishonesties being fed to me and spoken over me, I should have taken hold of the vast number of GOOD thoughts that were being spoken into me by my Creator and Father.  Motherhood, wife life, relationships, comparison, expectations and social media all fight for possession of your identity.  We give our authority to these things and ultimately find ourselves walking in lack. Lack of joy, peace, love, trust and so much more, because we have given in to lies.  My heart is to encourage other women to grab a handful of sand and imagine grain by grain how many good thoughts the Lord has about them instead of the lies and deceit we can fall victim to believing.
         </p>
-    </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>

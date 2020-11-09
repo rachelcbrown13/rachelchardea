@@ -15,12 +15,12 @@
 }
 
 a {
-    color: #5f9cec;
+    color: #81a3cf;
 }
 .container {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-right: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     padding-left: 80px;
     text-align: center;
 }
@@ -29,7 +29,6 @@ a {
     font-size: 25px;
     font-family: Itim;
     background-color: #81a3cf;
-
 }
 
 p{
@@ -39,34 +38,46 @@ p{
 
 .grid-container{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-    justify-content: space-evenly;
-    padding: 200px;
+    padding: 150px;
+    gap: 40px
 }
 .grid-item-author-1 { 
-    grid-row: 1/3;
-    grid-column: 1/2;
-    justify-self: center;
+    grid-area: 1 / 1 / 3 / 2;
+    place-self: center;
 }
 .grid-item-author-2 { 
-    grid-area: 1 / 2 / 2 / 3;
-    justify-self: stretch;
-    
+    grid-area: 1 / 2 / 2 / 4;
+    place-self: stretch;
 }
 .grid-item-author-3 { 
     grid-area: 2 / 2 / 3 / 3;
-    justify-self: center;
-   
+    place-self: center;
+}
+.grid-item-author-4 {
+    grid-area: 2 / 3 / 3 / 4;
+    place-self: center;
 }
 .grid-item-speaker-1{
     grid-area: 1 / 2 / 3 / 3;
-    justify-self: center;
+    place-self: center;
 }
 .grid-item-speaker-2{
     grid-area: 1 / 1 / 3 / 2;
-    justify-self: center;
+    place-self: center;
 }
 .btn-block {
     background-color: #81a3cf;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+    padding: 150px;
+}
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
